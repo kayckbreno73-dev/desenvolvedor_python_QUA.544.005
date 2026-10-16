@@ -17,3 +17,8 @@ while True:
     except Exception as e:
         print(f"não foi possivel calcular a media {e}.")
     continuar=input("deseja continuar? 'sim' para prosseguir. Qualquer outro valor pra encerrar:".strip().lower())
+    if continuar=="sim":
+        os.system("cls" if os.name=="nt" else "clear")
+        continue
+    else:
+        break
